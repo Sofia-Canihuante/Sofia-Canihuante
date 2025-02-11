@@ -3,56 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio - Sofia Canihuante</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Sofia Canihuante | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Professional Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Sofia Canihuante</div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="IMG_0523.jpeg" alt="Sofia Canihuante" class="profile-pic">
-        <p>Hello! My name is Sofia Canihuante, a current Anthropology and Data Science Senior at the University of Texas at Austin.</p>
-        <p>I have experience with Java, JavaScript, R, RStudio, and Python. I am passionate about solving technical problems with an interdisciplinary approach.</p>
-        <p>I'm interested in program management, project managment, trust and safety, data analyst, and security-related roles.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Chihuahua Adoption in Texas</h3>
-            <p>Elements of Statistics course project in which a GLM was used for analysis.</p>
-            <iframe src="SDS320E Poster.pdf" class="pdf-viewer"></iframe>
-        </div>
-        <div class="project">
-            <h3>Social & Biological Networks</h3>
-            <p>Various network analyses were done, including bipartite modeling.</p>
-            <iframe src="Project2.pdf" class="pdf-viewer"></iframe>
-        </div>
-        <div class="project">
-            <h3>Other Project</h3>
-            <p>Brief description of the project, technology used, and outcomes.</p>
-            <iframe src="Project3.pdf" class="pdf-viewer"></iframe>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <img src="IMG_0523.jpeg" alt="Sofia Canihuante">
+            <p>Hello! My name is Sofia Canihuante, an Anthropology and Data Science Senior at UT Austin.</p>
+            <p>I have experience with Java, JavaScript, R, RStudio, and Python. I am passionate about solving technical problems with an interdisciplinary approach.</p>
+            <p>I'm interested in program management, project management, product management  trust and safety, data analyst, and security-related roles.</p>
         </div>
     </section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>You can view or download my resume below:</p>
-        <iframe src="Resume.pdf" class="pdf-viewer"></iframe>
-        <a href="Resume.pdf" download class="btn">Download Resume</a>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Chihuahua Adoption in Texas</h3>
+                    <p>Elements of Statistics course project analyzing adoption rates using GLM.</p>
+                    <a href="SDS320E Poster.pdf" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Social & Biological Networks</h3>
+                    <p>Analysis of bipartite network data.</p>
+                    <a href="Project2.pdf" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>[Project Name]</h3>
+                    <p>Brief description of the project and technologies used.</p>
+                    <a href="Project3.pdf" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h1>My Resume</h1>
+            <iframe src="Resume.pdf" width="100%" height="500px"></iframe>
+            <a href="Resume.pdf" download class="btn">Download Resume</a>
+        </div>
     </section>
 
 </body>
